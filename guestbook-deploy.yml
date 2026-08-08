@@ -3,7 +3,11 @@ kind: Deployment
 metadata:
   name: guestbook-ui
 spec:
+<<<<<<< HEAD
   replicas: 1
+=======
+  replicas: 2
+>>>>>>> 99e729c62c64189d0500663159bc70624a802aa6
   revisionHistoryLimit: 3
   selector:
     matchLabels:
@@ -17,4 +21,8 @@ spec:
         - image: gcr.io/google-samples/gb-frontend:v5
           name: guestbook-ui
           ports:
+<<<<<<< HEAD
             - containerPort: 80
+=======
+            - containerPort: 80
+>>>>>>> 99e729c62c64189d0500663159bc70624a802aa6
